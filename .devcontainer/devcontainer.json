@@ -1,0 +1,37 @@
+{
+    "name": "cpp-dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "containerEnv": {
+        "SHELL": "/bin/bash"
+    },
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:/home/dev/.local/bin/"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.watcherExclude": {
+                    "**/target/**": true
+                },
+                "[json]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode",
+                    "editor.formatOnSave": true
+                },
+                "[yaml]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode",
+                    "editor.formatOnSave": true
+                }
+            },
+            "extensions": [
+                "gruntfuggly.todo-tree", // ToDo
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools",
+                
+            ]
+        }
+    },
+    // "postCreateCommand": ""
+}
