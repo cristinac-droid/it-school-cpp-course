@@ -5,7 +5,7 @@
             "name": "gcc-codespace",
             "displayName": "GCC CodeSpace x86_64-linux-gnu",
             "description": "Using compilers: C = /usr/local/bin/gcc, CXX = /usr/local/bin/g++",
-            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "binaryDir": "${sourceDir}/out/build",
             "cacheVariables": {
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
                 "CMAKE_C_COMPILER": "/usr/local/bin/gcc",
@@ -17,7 +17,7 @@
             "name": "gcc-wsl",
             "displayName": "GCC WSL x86_64-linux-gnu",
             "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
-            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "binaryDir": "${sourceDir}/out/build",
             "cacheVariables": {
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
                 "CMAKE_C_COMPILER": "/usr/bin/gcc",
